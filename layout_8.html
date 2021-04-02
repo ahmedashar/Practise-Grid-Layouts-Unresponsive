@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8th Layout Practise</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 300px 100px 100px 200px 20px;
+            grid-template-rows: 100px 200px;
+            grid-gap: .5rem;
+            justify-content: center;
+            text-align: center;
+        }
+        .items {
+            background-color: pink;
+        }
+        #item-4 {
+            grid-column: 4/span 1;
+            grid-row: 1/span 2;
+        }
+        #item-5 {
+            grid-column: 5/span 1;
+            grid-row: 1/span 2;
+        }
+        #item-6 {
+            grid-column: 6/span 1;
+            grid-row: 1/span 2;
+        }
+        #item-8 {
+            grid-column: 2/span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <din class="items" id="item-1" style="background-color: red;">1</din>
+        <din class="items" id="item-2" style="background-color: rgb(15, 165, 157);">2</din>
+        <din class="items" id="item-3" style="background-color: rgb(6, 116, 6);">3</din>
+        <din class="items" id="item-4" style="background-color: rgb(28, 139, 184);">4</din>
+        <din class="items" id="item-5" style="background-color: rgb(61, 61, 228);">5</din>
+        <din class="items" id="item-6" style="background-color: skyblue;">6</din>
+        <din class="items" id="item-7" style="background-color: orangered;">7</din>
+        <din class="items" id="item-8" style="background-color: rgb(230, 160, 128);">8</din>
+    </div>
+</body>
+</html>

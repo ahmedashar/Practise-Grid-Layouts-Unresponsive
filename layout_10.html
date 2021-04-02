@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10th Layout Practise</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 300px 300px 100px;
+            grid-template-rows: repeat(3, 100px);
+            grid-gap: .5rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .items {
+            background-color: black;
+            border-radius: 15px;
+
+        }
+
+        #item-1 {
+            grid-area: 1/ 1/span 2/span 1;
+            background-color: green;
+        }
+
+        #item-2 {
+            grid-column: 2/span 2;
+            background-color: rgb(29, 167, 167);
+        }
+
+        #item-3 {
+            grid-area: 2/ 2/span 2/span 1;
+            background-color: rgb(185, 73, 33);
+        }
+
+        #item-4 {
+            background-color: rgb(66, 87, 35);
+        }
+
+        #item-5 {
+            background-color: palevioletred;
+        }
+
+        #item-6 {
+            background-color: rgb(87, 33, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="item-1">1</div>
+        <div class="items" id="item-2">2</div>
+        <div class="items" id="item-3">3</div>
+        <div class="items" id="item-4">4</div>
+        <div class="items" id="item-5">5</div>
+        <div class="items" id="item-6">6</div>
+    </div>
+</body>
+
+</html>

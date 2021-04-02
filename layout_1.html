@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout one</title>
+    <style>
+        /* * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        } */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: 50px 300px 50px 50px;
+            grid-gap: 5px;
+            margin: 50px auto;
+            font-size: 40px;
+        }
+        .item {
+            background-color: red;
+            text-align: center;
+            color: white;
+        }
+        #item-1 {
+            grid-column: 1/span 5;
+            background-color: cyan;
+        }
+        #item-2 {
+            grid-row: 2/span 2;
+            background-color: rgb(109, 190, 109);
+        }
+        #item-3 {
+            grid-column: 2/span 4;
+            background-color: rgb(230, 172, 66);
+        }
+        #item-4 {
+            grid-column: 2/span 4;
+            background-color: gray;
+        }
+        #item-5 {
+            grid-column: 1/span 5;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="item-1">Header</div>
+        <div class="item" id="item-2">Slidebar</div>
+        <div class="item" id="item-3">Main Content</div>
+        <div class="item" id="item-4">Extra Content</div>
+        <div class="item" id="item-5">Footer</div>
+    </div>
+</body>
+</html>

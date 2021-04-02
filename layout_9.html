@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th Layout Practise</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 200px 100px 100px;
+            grid-template-rows: repeat(4, 100px);
+            grid-gap: 0.5rem;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .items {
+            background-color: orange;
+        }
+
+        #item-5 {
+            grid-column: 1/span 1;
+            grid-row: 1/span 1;
+            background-color: palevioletred;
+        }
+
+        #item-6 {
+            grid-column: 1/span 1;
+            grid-row: 2/2;
+            background-color: palevioletred;
+        }
+
+        #item-1 {
+            background-color: rgb(204, 49, 101);
+            grid-area: 1 / 2 /span 2 /span 2;
+        }
+
+        #item-2 {
+            grid-area: 3 / 3 /span 2/span 1;
+            background-color: rgb(204, 49, 101);
+        }
+
+        #item-3 {
+            grid-column: 4/span 2;
+            grid-row: 1/1;
+            background-color: cyan;
+        }
+
+        #item-4 {
+            grid-column: 4/span 2;
+            grid-row: 2/2;
+            background-color: cyan;
+        }
+
+        #item-7 {
+            grid-column: 1/span 1;
+            grid-row: 3/3;
+            background-color: palevioletred;
+        }
+
+        #item-8 {
+            grid-column: 1/span 1;
+            grid-row: 4/4;
+            background-color: palevioletred;
+        }
+
+        #item-9 {
+            grid-column: 2/span 1;
+            grid-row: 3/3;
+            background-color: palevioletred;
+        }
+
+        #item-10 {
+            grid-column: 2/span 1;
+            grid-row: 4/4;
+            background-color: palevioletred;
+        }
+        #item-11, #item-12, #item-13, #item-14{
+            background-color: palevioletred;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="item-1">1</div>
+        <div class="items" id="item-2">2</div>
+        <div class="items" id="item-3">3</div>
+        <div class="items" id="item-4">4</div>
+        <div class="items" id="item-5">5</div>
+        <div class="items" id="item-6">6</div>
+        <div class="items" id="item-7">7</div>
+        <div class="items" id="item-8">8</div>
+        <div class="items" id="item-9">9</div>
+        <div class="items" id="item-10">10</div>
+        <div class="items" id="item-11">11</div>
+        <div class="items" id="item-12">12</div>
+        <div class="items" id="item-13">13</div>
+        <div class="items" id="item-14">14</div>
+    </div>
+</body>
+
+</html>
